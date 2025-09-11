@@ -1,0 +1,64 @@
+{
+  "name": "default-agent",
+  "version": "1.0.0",
+  "description": "Default agent configuration",
+  "mcpServers": {
+    "Figma": {
+      "url": "http://127.0.0.1:3845/mcp",
+      "disabled": false,
+      "timeout": 60000
+    },
+    "figma-test": {
+      "url": "http://127.0.0.1:3845/mcp",
+      "disabled": false,
+      "timeout": 60000
+    },
+    "figma": {
+      "url": "http://127.0.0.1:3845/mcp",
+      "disabled": false,
+      "timeout": 60000
+    }
+  },
+  "tools": [
+    "fs_read",
+    "execute_bash",
+    "fs_write",
+    "report_issue",
+    "use_aws",
+    "fsRead",
+    "fsWrite",
+    "fsReplace",
+    "listDirectory",
+    "fileSearch",
+    "executeBash",
+    "codeReview",
+    "displayFindings"
+  ],
+  "allowedTools": [
+    "fs_read",
+    "report_issue",
+    "use_aws",
+    "execute_bash",
+    "fs_write",
+    "fsRead",
+    "listDirectory",
+    "fileSearch",
+    "codeReview",
+    "displayFindings"
+  ],
+  "toolsSettings": {
+    "execute_bash": {
+      "preset": "readOnly"
+    },
+    "use_aws": {
+      "preset": "readOnly"
+    }
+  },
+  "includedFiles": [
+    "AmazonQ.md",
+    "README.md",
+    ".amazonq/rules/**/*.md"
+  ],
+  "resources": [],
+  "promptHooks": []
+}
